@@ -6,11 +6,40 @@ import bmwImg from "./assets/bmw-z4.png";
 import fordImg from "./assets/ford-f150.png";
 
 const cars = [
-  { id: 1, name: "Mercedes-Benz C-Class", price: "$85/day", img: mercedesImg, engine: "2.0L Turbo", seats: 5 },
-  { id: 2, name: "Toyota RAV4", price: "$70/day", img: toyotaImg, engine: "2.5L Hybrid", seats: 5 },
-  { id: 3, name: "BMW Z4 Roadster", price: "$120/day", img: bmwImg, engine: "3.0L TwinPower Turbo", seats: 2 },
-  { id: 4, name: "Ford F-150", price: "$95/day", img: fordImg, engine: "3.3L V6", seats: 5 },
+  { 
+    id: 1, 
+    name: "Mercedes-Benz C-Class", 
+    price: "₹7,055/day", 
+    img: mercedesImg, 
+    engine: "2.0L Turbo", 
+    seats: 5 
+  },
+  { 
+    id: 2, 
+    name: "Toyota RAV4", 
+    price: "₹5,810/day", 
+    img: toyotaImg, 
+    engine: "2.5L Hybrid", 
+    seats: 5 
+  },
+  { 
+    id: 3, 
+    name: "BMW Z4 Roadster", 
+    price: "₹9,960/day", 
+    img: bmwImg, 
+    engine: "3.0L TwinPower Turbo", 
+    seats: 2 
+  },
+  { 
+    id: 4, 
+    name: "Ford F-150", 
+    price: "₹7,885/day", 
+    img: fordImg, 
+    engine: "3.3L V6", 
+    seats: 5 
+  },
 ];
+
 
 export default function CarDetails() {
   const { id } = useParams();
@@ -42,9 +71,15 @@ export default function CarDetails() {
 
           <div className="text-center">
             <p className="text-3xl font-bold text-blue-600 mb-2">{car.price}</p>
-            <button className="bg-green-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-600">
-              Book via WhatsApp
-            </button>
+            <a
+  href="https://web.whatsapp.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-4 block w-full bg-blue-600 text-white rounded-lg py-2 text-sm font-semibold hover:bg-blue-700 text-center"
+>
+  Book via WhatsApp
+</a>
+
           </div>
         </div>
       </div>

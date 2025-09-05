@@ -8,11 +8,12 @@ import heroImg from "./assets/hero2.jpg";
 
 
 const cars = [
-  { id: 1, name: "Mercedes-Benz C-Class", price: "$85/day", img: mercedesImg },
-  { id: 2, name: "Toyota RAV4", price: "$70/day", img: toyotaImg },
-  { id: 3, name: "BMW Z4 Roadster", price: "$120/day", img: bmwImg },
-  { id: 4, name: "Ford F-150", price: "$95/day", img: fordImg },
+  { id: 1, name: "Mercedes-Benz C-Class", price: "₹7,055/day", img: mercedesImg },
+  { id: 2, name: "Toyota RAV4", price: "₹5,810/day", img: toyotaImg },
+  { id: 3, name: "BMW Z4 Roadster", price: "₹9,960/day", img: bmwImg },
+  { id: 4, name: "Ford F-150", price: "₹7,885/day", img: fordImg },
 ];
+
 
 export default function Home() {
   return (
