@@ -7,5 +7,6 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base:"/car-booking"
+  base: '/car-booking/',
+
 })
